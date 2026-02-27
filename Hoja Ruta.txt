@@ -1,0 +1,24 @@
+ Estructura
+
+ src/
+ ├── pages/
+ │    ├── Home.jsx
+ │    ├── RecipeDetail.jsx
+ │    └── Favorites.jsx
+ │
+ ├── components/
+ │    ├── RecipeCard.jsx
+ │    ├── RecipeList.jsx
+ │    ├── SearchBar.jsx
+ │    └── Navbar.jsx
+ │
+ ├── context/
+ │    └── FavoritesContext.jsx
+ │
+ ├── hooks/
+ │    └── useRecipes.js
+ │
+ ├── services/
+ │    └── api.js
+ │
+ └── App.jsx

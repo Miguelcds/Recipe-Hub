@@ -1,0 +1,144 @@
+/* 
+   ESTILOS GENERALES
+ */
+
+header {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 50px 20px 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid #334155;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* TITULO PRINCIPAL */
+header h1 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f97316, #fb923c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SUBTITULO */
+header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* 
+   NAVBAR
+ */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-principal {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+
+#nav-principal li {
+  position: relative;
+}
+
+#nav-principal a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+}
+
+/* Hover elegante */
+#nav-principal a:hover {
+  color: #f97316;
+}
+
+/* Activo */
+#nav-principal .active {
+  color: #f97316;
+}
+
+/* Subrayado animado */
+#nav-principal a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f97316;
+  transition: width 0.3s ease;
+}
+
+#nav-principal a:hover::after {
+  width: 100%;
+}
+
+#nav-principal .active::after {
+  width: 100%;
+}
+
+/* 
+   MAIN
+*/
+
+main {
+  padding: 50px 20px;
+  min-height: 70vh;
+  animation: fadeInMain 0.4s ease-in-out;
+}
+
+/* 
+   ANIMACIONES
+ */
+
+@keyframes fadeInMain {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 
+   RESPONSIVE
+ */
+
+@media (max-width: 768px) {
+  header {
+    padding: 40px 15px 20px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header h2 {
+    font-size: 14px;
+  }
+
+  #nav-principal {
+    gap: 20px;
+  }
+
+  #nav-principal a {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+}

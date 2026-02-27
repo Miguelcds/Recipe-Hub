@@ -1,0 +1,28 @@
+nav {
+  background-color: #0b1220;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  margin-top: 30px ;
+}
+
+#nav-principal {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#nav-principal a {
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+#nav-principal a:hover {
+  color: var(--accent);
+}
+
+#nav-principal .active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}

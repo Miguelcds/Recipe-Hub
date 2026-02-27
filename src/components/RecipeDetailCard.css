@@ -1,0 +1,127 @@
+/* CONTENEDOR PRINCIPAL */
+.recipe-detail {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #1e293b, #172033);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+  animation: fadeIn 0.4s ease-in-out;
+  text-align: center;
+}
+
+/* IMAGEN PRINCIPAL */
+.recipe-detail img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* TITULO */
+.recipe-detail h3 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* CATEGORIA */
+.recipe-detail p {
+  color: #94a3b8;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* SECCION INGREDIENTES */
+.recipe-detail h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f97316;
+  letter-spacing: 0.5px;
+}
+
+.recipe-detail ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.recipe-detail ul li {
+  background-color: #0f172a;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #334155;
+  transition: all 0.2s ease;
+}
+
+.recipe-detail ul li:hover {
+  background-color: #1e293b;
+  transform: translateY(-2px);
+}
+
+/* VIDEO */
+.recipe-detail .react-player {
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* INSTRUCCIONES */
+.recipe-detail h4 {
+  margin-top: 30px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #cbd5e1;
+}
+
+/* BOTON FAVORITOS */
+.recipe-detail button {
+  margin-top: 30px;
+  background: transparent;
+  border: 2px solid #f97316;
+  color: #f97316;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.recipe-detail button:hover {
+  background-color: #f97316;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.4);
+}
+
+/* ANIMACION SUAVE */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .recipe-detail {
+    padding: 20px;
+  }
+
+  .recipe-detail h3 {
+    font-size: 26px;
+  }
+
+  .recipe-detail ul {
+    grid-template-columns: 1fr;
+  }
+}
