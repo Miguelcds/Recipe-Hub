@@ -34,6 +34,7 @@
 
 ## 📂 Project Structure
 
+```
 src/
 │
 ├── pages/
@@ -60,6 +61,7 @@ src/
 │      └── api.js
 │
 └── App.jsx
+```
 
 ---
 
