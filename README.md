@@ -15,7 +15,7 @@
 - 📱 Fully responsive design
 - ⚡ Optimized state management with custom hooks
 
------
+---
 
 ## 🧠 Technologies Used
 
@@ -91,16 +91,23 @@ This project was built to:
 
 Clone the repository:
 
+```bash
 git clone https://github.com/your-username/the-secret-recipe.git
+```
 
 Install dependencies:
 
+```bash
 npm install
+```
 
 Run the project:
 
+```bash
 npm run dev
+```
 
+---
 
 ## 🔮 Future Improvements
 
@@ -114,12 +121,14 @@ npm run dev
 - ⚡ Performance optimizations and caching
 - 🎨 Enhanced animations and UI polish
 
-
+---
 
 ## 👨‍💻 Author
 
-Joao Costa
+**Joao Costa**  
 Full-Stack Developer in progress 🚀
+
+---
 
 ## 📄 License
 
