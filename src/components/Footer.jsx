@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-brand">
           <h3>The Secret Meal</h3>
-          <p>Crafted with React</p>
+          <p>Crafted with React, blood, sweat and tears.</p>
         </div>
 
         <div className="footer-info">
