@@ -17,7 +17,7 @@ const RecipeCard = ({ recipe }) => {
         </div>
       </Link>
       <button onClick={() => toggleFavorite(recipe.id)}>
-        {isFavorite(recipe.id) ? '💔 Quitar de Favs': '❤️ Añadir a Favs'}
+        {isFavorite(recipe.id) ? '💔 Remove from Favs': '❤️ Add to Favs'}
       </button>
     </li>
   );

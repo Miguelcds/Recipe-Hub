@@ -1,16 +1,124 @@
-# React + Vite
+# 🍽️ The Secret Recipe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**The Secret Recipe** is a modern React application that allows users to discover, explore and save their favorite meals from around the world.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🔍 Search recipes by name
+- 🎲 Display random meals on initial load
+- 📄 Dynamic recipe detail pages
+- ❤️ Add / Remove favorites
+- 💾 Persistent favorites using localStorage
+- 🌑 Dark modern UI
+- 📱 Fully responsive design
+- ⚡ Optimized state management with custom hooks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-----
 
-## Expanding the ESLint configuration
+## 🧠 Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React
+- React Router DOM
+- Custom Hooks
+- Context API
+- React Player
+- CSS (Dark theme custom design)
+
+### API
+- [TheMealDB API](https://www.themealdb.com/)
+
+---
+
+## 📂 Project Structure
+
+src/
+│
+├── pages/
+│      ├── Home.jsx
+│      ├── RecipeDetail.jsx
+│      └── Favorites.jsx
+│
+├── components/
+│      ├── RecipeCard.jsx
+│      ├── RecipeList.jsx
+│      ├── RecipeDetailCard.jsx
+│      ├── SearchBar.jsx
+│      ├── Navbar.jsx
+│      └── Footer.jsx
+│
+├── context/
+│      └── FavoritesContext.jsx
+│
+├── hooks/
+│      ├── useRecipes.js
+│      └── useRecipeDetail.js
+│
+├── services/
+│      └── api.js
+│
+└── App.jsx
+
+---
+
+## 🧩 Architecture Highlights
+
+- Clean separation of concerns (API / Hooks / Components / Pages)
+- Global state handled via Context API
+- Data fetching abstracted into reusable custom hooks
+- UI components kept presentational and reusable
+- Persistent state management using localStorage
+
+---
+
+## 🎯 Learning Goals
+
+This project was built to:
+
+- Practice React architecture patterns
+- Improve component structuring
+- Work with dynamic routing
+- Manage global state with Context
+- Implement persistent UI state
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/the-secret-recipe.git
+
+Install dependencies:
+
+npm install
+
+Run the project:
+
+npm run dev
+
+
+## 🔮 Future Improvements
+
+- 📩 Implement a functional contact form
+- 🔎 Add advanced search options (by category, ingredient, area, etc.)
+- ➕ Allow users to submit and create new recipes
+- 🗂️ Add filtering and sorting by categories
+- ⭐ Improve favorites system with user accounts
+- 🔐 Add authentication (login / register)
+- 🌍 Multi-language support
+- ⚡ Performance optimizations and caching
+- 🎨 Enhanced animations and UI polish
+
+
+
+## 👨‍💻 Author
+
+Joao Costa
+Full-Stack Developer in progress 🚀
+
+## 📄 License
+
+This project is developed for educational purposes.

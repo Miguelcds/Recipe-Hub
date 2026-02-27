@@ -20,7 +20,7 @@ const RecipeDetailCard = ({ recipe }) => {
       <ReactPlayer src={recipe.video} controls width="100%" height="400px"  />
       <h4>{recipe.instructions}</h4>
       <button onClick={() => toggleFavorite(recipe.id)}>
-        {isFavorite(recipe.id) ? "💔 Quitar de Favs" : "❤️ Añadir a Favs"}
+        {isFavorite(recipe.id) ? "💔 Remove from Favs" : "❤️ Add to Favs"}
       </button>
     </div>
   );
